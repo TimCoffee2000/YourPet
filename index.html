@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Твоє щеня</title>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div id="textTitle">
+        <h1>Твоє щеня</h1>
+    </div>
+
+    <div id="pointsCounter">
+        <p>Очки: <output type="inline" id="pointsValue" value="0">0</output></p>
+    </div>
+
+    <div id="Pet">
+            <img id="Sprite" src="https://t4.ftcdn.net/jpg/00/71/98/95/240_F_71989500_YefkekJ3UjECVpRfBAJ4zjTEaQFjc1E0.jpg  ">
+    </div>
+
+    <input id="btnMain"  type="button"  value="Натисни сюди двічі, щоб зіграти!" onclick="main()">
+
+    <div id="checkStat">
+
+    <div id="foodStat">
+        <p align="Center">
+            Їжа: <progress id="foodBar" min="0"  max="100" value="100">
+        </progress>
+        </p>
+    </div>
+
+    <div id="walkStat">
+        <p align="Center">
+            Прогулянка:	<progress id="walkBar" min="0" max="100" value="100" >
+        </progress>
+        </p>
+    </div>
+
+    <div id="funStat">
+        <p align="Center">
+            Розваги: <progress id="funBar" min="0" max="100" value="100">
+        </progress>
+        </p>
+    </div>
+
+    <div id="Buttons">
+        <p align="Center">
+            <input id="btnFood" type="Button" value="Погодувати">
+            <input id="btnWalk" type="Button" value="Вигуляти">
+            <input id="btnFun" type="Button" value="Погратись">
+        </p>
+    </div>
+
+    </div>
+
+    <div id="rules">
+        <p><small>
+            Як грати:<br>Натискай на кнопки, щоб погодувати щеня, вигуляти його чи погратись із ним.
+            <br>Якщо смужка опустошиться, ти не зможеш відновити її.
+            <br>Якщо всі три смужки опустошаться, ти програєш.
+            <br>Щоб виграти, тобі необхідно отримати кісточку.
+        </small></p>
+    </div>
+
+    <div id="sellWindow">
+        <h2><br/>Крамниця</h2>
+        <p>
+            <input id="fasterId" type="Button" value="Отримати пришвидшувач"><br/>
+            <small>Ціна: 150 очків</small><br/>
+            <small>(Пришвидшує набирання очків удвічі).</small><br/><br/>
+            <input id="boneId" type="Button" value="Отримати кісточку"><br/>
+            <small>Ціна: 1000 очків</small><br/>
+            <small>(Щоб отримати кісточку, потрібно мати пришвидшувач).</small><br/><br/>
+        </p>
+    </div>
+
+</body>
+
+</html>
